@@ -7,10 +7,9 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 .spacing {
-  margin-bottom: 100px; }
-
-#Home {
-  margin-top: 100px; }
+  margin-top: 1px;
+  margin-bottom: 100px;
+  overflow: hidden; }
 
 .navbar {
   max-height: 75px; }

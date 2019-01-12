@@ -3,9 +3,14 @@ h1{
 }
 body{
     padding-left: 10px;
-    padding-top: 100px;
     background-color: aqua;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.spacing{
+    margin-bottom: 100px;
+}
+#Home{
+    margin-top: 100px;
 }
 .navbar{
     max-height: 75px;

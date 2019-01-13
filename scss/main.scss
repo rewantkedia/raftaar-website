@@ -1,17 +1,39 @@
+
 h1{
     font-weight: 100px;
 }
+
 body{
     padding-left: 10px;
     background-color: aqua;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+//spacing is the class that allows spacing between navbar and paragraphs.
+//If not present navbar blocks the content of the paragraphs.
 .spacing{
     margin-top: 1px;
     margin-bottom: 100px;
     overflow: hidden;
 }
 
-.navbar{
-    max-height: 75px;
+//this function is invoked when the screen size is small and navbar is converted to menu.
+@media (min-width: 200px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+    //spacing added because when toggle is pressed it blocks the content of the div. (RK)
+    //can be removed if other methods of avoiding content blocking is found.
+    .spacing{
+        margin-bottom: 220px;
+    }
 }

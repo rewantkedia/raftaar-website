@@ -1,8 +1,10 @@
 console.log("JS ready");
 
-//Scrolling to the top of the page when the page is reloaded.
+
 $(document).ready(function(){
-    $(this).scrollTop(0);
+    $(this).scrollTop(0);  //Scrolling to the top of the page when the page is reloaded.
+
+    //below function is for smooth scrolling.
     $("a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
